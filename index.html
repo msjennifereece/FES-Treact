@@ -43,11 +43,55 @@
             </a>
           </li>
           <li class="nav__list">
-            <a href="" class="nav__link btn">
-              Sign Up
-            </a>
+            <button class="btn">
+              <a class="nav__link nav__link--btn" href="">
+                Sign Up
+              </a>
+            </button>
           </li>
         </ul>
+        <button class="menu__btn" onclick="menuOpen()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="menu__btn menu__btn--close" onclick="menuClose()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a class="menu__link" href="">
+                About
+              </a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="">
+                Blog
+              </a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="">
+                Pricing
+              </a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="">
+                Contact Us
+              </a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" href="">
+                Login
+              </a>
+            </li>
+            <li class="menu__list">
+              <button class="menu__sign-up--btn btn">
+                <a class="menu__link--btn" href="">
+                  Sign Up
+                </a>
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <header>
@@ -55,14 +99,14 @@
         <div class="row">
           <div class="header">
             <div class="header__left">
-              <h1>
+              <h1 class="header__title">
                 Beautiful React Templates <span class="purple">for you.</span>
               </h1>
               <p class="header__para">
                 Our templates are easy to setup, undersand and custiomize. Fully modular components with a variety of pages and components.
               </p>
               <div class="two__column--input">
-                <input class="input" type="text" placeholder="Your E-mail Address">
+                <input class="input" type="text" placeholder="Your E-mail Address"></input>
                 <button class="input--btn btn">Get Started</button>
               </div>
               <div>
