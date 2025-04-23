@@ -70,7 +70,8 @@ button {
 }
 
 .center__h5,
-.left__h5 {
+.left__h5,
+.right__h5 {
   font-weight: 700;
   text-transform: uppercase;
   color: #6415ff;
@@ -79,38 +80,60 @@ button {
 }
 
 .center__h2,
-.left__h2 {
+.left__h2,
+.right__h2 {
   font-size: 48px;
   font-weight: 900;
   text-align: center;
 }
 
 .center__para,
-.left__para {
+.left__para,
+.right__para {
   font-size: 18px;
   color: #7c8ba1;
   margin-top: 16px;
   text-align: center;
 }
 
-/* Left */
+/* Left Right */
 
-.section__left {
+.section__left,
+.section__right {
   display: flex;
 }
 
-.left__section {
+.left__section,
+.right__section {
   width: 50%;
+}
+
+.left__section {
   margin-right: 64px;
+  
+}
+
+.right__section {
+  margin-left: 64px;
 }
 
 .left__h5,
 .left__h2,
-.left__para {
+.left__para,
+.right__h5,
+.right__h2,
+.right__para {
   text-align: left;
 }
 
 .figure__right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure__left {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -536,5 +559,96 @@ QUALITY WORK
   .figure__right {
     width: 100%;
     max-width: 448px;
+  }
+}
+
+/*
+
+STEPS
+
+*/
+
+.steps__container {
+  margin-top: 48px;
+}
+
+.step {
+  display: flex;
+  justify-content: start;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.step__description {
+  margin-left: 24px;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__para {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #718096;
+  max-width: 320px;
+  line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  .right__h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__right {
+    flex-direction: column;
+    align-items: center;   
+  }
+  
+  .figure__left {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .right__section {
+    margin: 64px auto 0 auto;
+    width: 100%;
+    max-width: 448px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right__h5,
+  .right__h2 {
+    text-align: center;
+  }
+
+  .step {
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step__number {
+    margin-left: 20px;
+  }
+
+  .step__description {
+    margin-top: 12px;
+  }
+
+  .step__title,
+  .step__para {
+    text-align: center;
   }
 }
