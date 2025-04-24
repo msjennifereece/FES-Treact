@@ -639,16 +639,84 @@ STEPS
     align-items: center;
   }
 
-  .step__number {
-    margin-left: 20px;
-  }
-
   .step__description {
-    margin-top: 12px;
+    margin: 12px 0 0 0;
   }
 
   .step__title,
   .step__para {
+    text-align: center;
+  }
+}
+
+/*
+
+VALUES
+
+*/
+
+.values__left--para {
+  margin-top: 32px;
+}
+
+.two__column--promise {
+  display: flex;
+}
+
+.promises {
+  margin: 32px 32px 0 0;
+}
+
+.promise {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.cash {
+  background-color: rgb(159, 235, 200);
+}
+
+.case {
+  background-color: rgb(248, 170, 170);
+}
+
+.promise__icon {
+  padding: 8px;
+  border-radius: 999px;
+}
+
+.promise__title {
+  margin-left: 12px;
+  font-weight: 700;
+}
+
+.promise__para {
+  margin-top: 16px;
+  color: #718096;
+}
+
+.values--btn {
+  margin-top: 48px;
+}
+
+@media (max-width: 1024px) {
+  .two__column--promise {
+    flex-direction: column;
+  }
+
+  .promises {
+    width: 100%;
+    max-width: 288px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promise {
+    justify-content: center;
+  }
+
+  .promise__para {
     text-align: center;
   }
 }
