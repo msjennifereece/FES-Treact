@@ -847,3 +847,126 @@ PRICING
     font-size: 14px;
   }
 }
+
+/*
+
+TESTIMONAL
+
+*/
+
+#testimonials .right__para {
+  margin: 24px 0 48px 0;
+}
+
+.fa-star {
+  color: rgb(255, 190, 27);
+}
+
+.test__header {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.test__para {
+  margin: 16px 0 40px;
+}
+
+.customer__info--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer__info {
+  display: flex;
+  align-items: center;
+}
+
+.customer__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
+}
+
+.customer__text--container {
+  margin-left: 24px;
+}
+
+.customer__name {
+  font-size: 20px;
+}
+
+.customer__title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #718096;
+  width: 100%;
+}
+
+.arrow {
+  color: #6415ff;
+  background-color: #eaedef;
+  padding: 16px;
+  border-radius: 999px;
+  font-size: 16px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.fa-arrow-left {
+  margin-right: 8px;
+}
+
+.fa-arrow-right {
+  margin-left: 8px;
+}
+
+.divider {
+  color: #eaedef;
+}
+
+@media (max-width: 1024px) {
+  #testimonials .right__para {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonials .right__para, 
+  .test__ratings,
+  .test__header,
+  .test__para {
+    text-align: center;
+  }
+
+  #testimonials .right__para {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .customer__info--container,
+  .customer__info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customer__img,
+  .customer__name {
+    margin-bottom: 12px;
+  }
+
+  .customer__text--container {
+   text-align: center;
+    margin: 0;
+  }
+
+  .arrows {
+    margin-top: 32px;
+  }
+}
